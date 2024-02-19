@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "LaunchPad - Epic New Tab Launcher",
-  "version": "1.0",
+  "name": "UniqueTab - Epic New Tab Launcher",
+  "version": "0.0.0",
   "description": "The latest Hacker Noon tech stories.",
   "author": "Hacker Noon",
   "chrome_url_overrides" : {
-    "newtab": "launchpad.html"
+    "newtab": "uniquetab.html"
   },
   "permissions": [
     "storage"
