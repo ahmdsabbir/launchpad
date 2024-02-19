@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "UniqueTab - Epic New Tab Launcher",
   "version": "0.0.0",
-  "description": "The latest Hacker Noon tech stories.",
-  "author": "Hacker Noon",
+  "description": "Get an awesome new tab",
+  "author": "Sabbir Ahmed <ahmd.sabbir@gmail.com>",
   "chrome_url_overrides" : {
     "newtab": "uniquetab.html"
   },
