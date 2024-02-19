@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LaunchPad - Epic New Tab Launcher",
+  "version": "1.0",
+  "description": "The latest Hacker Noon tech stories.",
+  "author": "Hacker Noon",
+  "chrome_url_overrides" : {
+    "newtab": "launchpad.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "assets/imgs/icon.png",
+    "128": "assets/imgs/icon.png"
+  }
+}
