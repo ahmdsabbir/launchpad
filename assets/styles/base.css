@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
     height: 100vh;
 }
 
-.container > div {
+.container>div {
     width: 100%;
     height: 100%;
 }
@@ -23,6 +24,11 @@ body {
 .container .left {
     background-color: aliceblue;
 }
+
 .container .right {
     background-color: antiquewhite;
+}
+
+.container .left #date {
+    font-size: 2rem;
 }

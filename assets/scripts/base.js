@@ -8,17 +8,46 @@ function updateDateTime() {
         return;
     }
 
-    const now = new Date();
+    const weekDay = {weekday: 'long'}
+    const month = {month: 'long'}
+    const day = {year: 'numeric'}
+    const year = {year: 'numeric'}
 
-    const dateOptions = { weekday: 'long', year: 'numeric', month: 'numeric', day: 'numeric' };
-    const timeOptions = { hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    const hour = {hour: 'numeric'}
+    const minute = {minute: 'numeric'}
+    const second = {second: 'numeric'}
 
-    const formattedDate = now.toLocaleDateString('en-US', dateOptions);
-    const formattedClock = now.toLocaleTimeString('en-US', timeOptions);
-
-    dateDiv.textContent = formattedDate;
-    clockDiv.textContent = formattedClock;
+    dateDiv.innerHTML = generateDateDiv(weekDay, month, day, year);
+    clockDiv.innerHTML = generateClockDiv(hour, minute, second);
 
 }
 
 setInterval(updateDateTime, 1000);
+
+function generateDateDiv(weekDay, month, day, year) {
+    const now = new Date()
+    const formattedWeekDay = now.toLocaleDateString('en-US', weekDay);
+    const formattedMonth = now.toLocaleTimeString('en-US', month);
+    const formattedDay = now.toLocaleDateString('en-US', day);
+    const formattedYear = now.toLocaleDateString('en-US', year);
+ 
+    return `
+    <div class="date weekDay">${formattedWeekDay}</div>
+    <div class="date month">${formattedMonth}</div>
+    <div class="date day">${formattedDay}</div>
+    <div class="date year">${formattedYear}</div>
+    `
+}
+
+function generateClockDiv(hour, minute, second) {
+    const now = new Date()
+    const formattedHour = now.toLocaleTimeString('en-US', hour);
+    const formattedMinute = now.toLocaleDateString('en-US', minute);
+    const formattedSecond = now.toLocaleTimeString('en-US', second);
+
+    return `
+    <div class="clock hour">${formattedHour}</div>
+    <div class="clock minute">${formattedMinute}</div>
+    <div class="clock second">${formattedSecond}</div>
+    `
+}
