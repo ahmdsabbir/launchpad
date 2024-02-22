@@ -1,0 +1,44 @@
+/* Form container */
+.search-form {
+    width: 100%;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 18fr 1fr;
+    align-items: center;
+    border-radius: 6rem;
+    backdrop-filter: blur(.4rem) saturate(280%);
+    padding: .5rem;
+  }
+  
+  /* Input field */
+  .search-form input[type="text"] {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 1rem .8rem;
+    font-size: 1.25rem;
+    color: var(--primary-color)
+  }
+
+  .search-form ::placeholder {
+    color: var(--secondary-color);
+  }
+  
+  /* Search button */
+  .search-form button img {
+    width: 2rem;
+  }
+  .search-form button {
+    border: 0;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: flex-end;
+  }
+  
+  .search-form button:hover {
+    background-color: transparent; 
+  }

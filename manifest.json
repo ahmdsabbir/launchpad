@@ -8,7 +8,8 @@
     "newtab": "uniquetab.html"
   },
   "permissions": [
-    "storage"
+    "storage",
+    "bookmarks"
   ],
   "icons": {
     "16": "assets/imgs/icon.png",

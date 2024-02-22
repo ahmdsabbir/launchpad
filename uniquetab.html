@@ -4,20 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UniqueTab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/styles/base.css">
+  <link rel="stylesheet" href="assets/styles/clock.css">
+  <link rel="stylesheet" href="assets/styles/search.css">
 </head>
 <body>
   <div class="main-container">
-    <div class="left-side">
+
+    <div class="left-column">
       <div id="clock-container">
         <div id="date"></div>
-        <div id="time"></div>
       </div>
     </div>
-    <div class="right-side">
-      <h1>Hello World</h1>
+    
+    <div class="right-column">
+      <div>
+        <form action="https://www.google.com/search" method="GET" class="search-form">
+          <input type="text" name="q" placeholder="Search Something">
+          <button type="submit"><img src="assets/imgs/search.png" alt=""></button>
+        </form>
+      </div>
     </div>
+  
   </div>
-  <script src="assets/scripts/base.js"></script>
+  <script src="assets/scripts/clock.js"></script>
+  <script src="assets/scripts/bookmark.js"></script>
 </body>
 </html>

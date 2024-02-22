@@ -1,0 +1,52 @@
+
+#clock-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 60%;
+    font-family: "Orbitron";
+    padding: .5rem;
+    color: white;
+    /* Glass Morphism*/
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+#date
+{
+    font-weight: 1.5rem;
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: .5rem;
+}
+
+
+#hour, #minute, #second {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+#month, #day, #year {
+    font-size: 2rem;
+}
+
+#second {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
