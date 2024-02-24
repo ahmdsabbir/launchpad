@@ -6,8 +6,9 @@
     grid-template-columns: 18fr 1fr;
     align-items: center;
     border-radius: 6rem;
-    backdrop-filter: blur(.4rem) saturate(280%);
+    backdrop-filter: blur(.4rem) saturate(150%);
     padding: .5rem;
+    border: 1px solid white;
   }
   
   /* Input field */
@@ -18,11 +19,11 @@
     outline: none;
     padding: 1rem .8rem;
     font-size: 1.25rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
   }
 
   .search-form ::placeholder {
-    color: var(--secondary-color);
+    color: var(--bg-primary-color);
   }
   
   /* Search button */
