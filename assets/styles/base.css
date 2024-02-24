@@ -11,7 +11,11 @@
     --bg-color-secondary: red;
     --primary-color: black;
     --secondary-color: green;
-
+    --clr-scrollbar-thumb: gray;
+    --clr-scrollbar-thumb: transparent;
+    --clr-white: #fff;
+    --clr-scrollbar-track: transparent;
+    --clr-bookmark-border: white;
 }
 
 * {

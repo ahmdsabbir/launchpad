@@ -21,20 +21,19 @@
     font-weight: 1.5rem;
     text-align: left;
     font-size: 1.5em;
-    margin-bottom: .5rem;
+    margin: .5rem;
 }
-
 
 #hour, #minute, #second {
     font-weight: 600;
     font-size: 2.5rem;
 }
-#month, #day, #year {
-    font-size: 2rem;
+#year {
+    font-size: 1.6rem;
 }
 
-#second {
-    animation: blink 1s infinite;
+#month, #day {
+    font-size: 2.5rem;
 }
 
 @keyframes blink {

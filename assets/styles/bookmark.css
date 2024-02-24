@@ -1,0 +1,43 @@
+#bookmarks-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    max-height: 30rem;
+    overflow-y: scroll;
+    
+}
+
+.bookmark {
+    font-size: .8rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--clr-bookmark-border);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 100;
+    color: var(--clr-white);
+    border-radius: .5rem;
+    backdrop-filter: blur(.2rem) saturate(100%);
+}
+
+#bookmarks-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px var(--clr-scrollbar-track);
+	border-radius: 10px;
+	background-color: var(--clr-scrollbar-bg);
+}
+
+#bookmarks-container::-webkit-scrollbar
+{
+	width: .2rem;
+	background-color: transparent;
+}
+
+#bookmarks-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px var(--clr-scrollbar-thumb);
+	background-color: var(--clr-scrollbar-thumb);
+}

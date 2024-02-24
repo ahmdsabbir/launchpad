@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/styles/base.css">
   <link rel="stylesheet" href="assets/styles/clock.css">
   <link rel="stylesheet" href="assets/styles/search.css">
+  <link rel="stylesheet" href="assets/styles/bookmark.css">
 </head>
 <body>
   <div class="main-container">
@@ -20,12 +21,16 @@
     </div>
     
     <div class="right-column">
-      <div>
-        <form action="https://www.google.com/search" method="GET" class="search-form">
+      
+      <div id="search-container">
+        <form action="https://www.google.com/search" method="GET" class="search-form" id="search">
           <input type="text" name="q">
-          <button type="submit"><img src="assets/imgs/search.png" alt=""></button>
+          <button type="submit"><img src="assets/imgs/search.png" alt="search icon"></button>
         </form>
       </div>
+
+      <div id="bookmarks-container"></div>
+
     </div>
   
   </div>
