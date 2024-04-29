@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ES2020", "dom", "DOM.iterable"],
+    "module": "NodeNext",
+    "rootDir": "./src/scripts",
+    "outDir": "./build/scripts",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+		"strictNullChecks": true,
+		"noUnusedLocals": true,
+		"noImplicitAny": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["src/scripts/**.ts"]
+}

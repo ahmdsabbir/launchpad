@@ -1,0 +1,38 @@
+{
+  "name": "uniquetab",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp watch",
+    "build": "rimraf ./build && gulp style && gulp bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmdsabbir/uniquetab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmdsabbir/uniquetab/issues"
+  },
+  "homepage": "https://github.com/ahmdsabbir/uniquetab#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.262",
+    "cssnano": "^6.0.5",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "postcss": "^8.4.35",
+    "rimraf": "^5.0.5",
+    "sass": "^1.71.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
